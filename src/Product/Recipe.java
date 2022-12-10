@@ -39,15 +39,15 @@ public class Recipe { //класс рецептов, который содерж
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Recipe recipe = (Recipe) o;
-        return amount == recipe.amount && Objects.equals(name, recipe.name) && Objects.equals(products, recipe.products);
+        return getAmount() == recipe.getAmount() && Objects.equals(getName(), recipe.getName()) && Objects.equals(getProducts(), recipe.getProducts());
     }
     @Override
     public int hashCode() {
-        return Objects.hash(name, amount, products);
+        return Objects.hash(getName(), getAmount(), getProducts());
     }
     @Override
     public String toString() {
-        return String.format("%s, Количество: %s, Цена: %s рублей", this.name,getAmount()
+        return String.format("%s, Количество: %s, Цена: %s рублей", this.getName(),getAmount()
                 ,getSum());
     }
 }
