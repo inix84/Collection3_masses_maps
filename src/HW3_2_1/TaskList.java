@@ -22,8 +22,12 @@ public class TaskList {
             list.get(i).add((int) (Math.random() * 1000));
             hashMap.put("str" + Integer.toString(i), list.get(i));
             System.out.println("str" + Integer.toString(i) + " --> " + list.get(i));
-            listHashMap.put("str" + Integer.toString(i),
-                    list.get(i).get(0) + list.get(i).get(1) + list.get(i).get(2));
+            //listHashMap.put("str" + Integer.toString(i),list.get(i).get(0) + list.get(i).get(1) + list.get(i).get(2));
+            int  summsGet=0;
+            for (int j = 0; j < 3; j++) {
+                summsGet=summsGet+list.get(i).get(j);
+            }
+            listHashMap.put("str" + Integer.toString(i),summsGet);
         }
         for (int i = 0; i < 5; i++) {
             System.out.println("str" + Integer.toString(i) + " --> " + listHashMap.get("str" + Integer.toString(i)));
@@ -32,8 +36,5 @@ public class TaskList {
         for (int i = 0; i <= 10; i++) {
             integerStringHashMap.put(i, "str" + Integer.toString(i));
         }
-        /*for (int i = 0; i <= 10; i++) {
-            System.out.println(" " + integerStringHashMap.get(i));
-        }*/
     }
 }
