@@ -1,4 +1,4 @@
-package Product;
+package HW3_1_2Product;
 import java.util.*;
 public class Recipe { //класс рецептов, который содержит поля:
     private final String name;//Название рецепта.

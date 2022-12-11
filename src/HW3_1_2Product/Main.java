@@ -1,6 +1,5 @@
-package Product;
+package HW3_1_2Product;
 
-import Product.*;
 import java.util.Set;
 public class Main {
     public static void main(String[] args) {

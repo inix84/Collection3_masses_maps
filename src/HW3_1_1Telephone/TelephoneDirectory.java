@@ -1,7 +1,6 @@
-package Telephone;
+package HW3_1_1Telephone;
 import java.util.HashMap;
-import java.util.Map;
-import java.util.Objects;
+
 class TelephoneDirectory {
     public static void main(String[] args) {
         HashMap<String, String> directory = new HashMap<>(20);
